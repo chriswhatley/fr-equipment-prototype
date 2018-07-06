@@ -1,0 +1,312 @@
+/** Mobile-First, so these are our base styles that we tweak as the screen gets bigger **/
+
+/* Fonts */
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600|Raleway:500,700,800");
+
+body{
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.65em;
+	color: #444444;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    color: #444444;
+    font-weight: 800;
+}
+
+h1:after,
+h2:after,
+h3:after,
+h4:after,
+h5:after,
+h6:after {
+	display: block;
+	position: relative;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 3rem;
+	padding-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: solid 1px;
+}
+	
+.navbar-brand {
+	font-family: "Raleway", Helvetica, sans-serif;
+    color: #444444;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* Button */
+.btn {
+	border-radius: 0;	
+	font-size: 0.8rem;
+}
+
+/* Icon */
+.icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+}
+
+.icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+.icon > .label {
+	display: none;
+}
+
+.icon:before {
+	cursor: inherit;
+}
+
+.icon-wrapper {
+	width: 4em;
+	height: 2em;
+	line-height: 2em;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 1.235em 0;
+}
+
+.icon-wrapper:before, .icon-wrapper:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: solid 2em transparent;
+	border-right: solid 2em transparent;
+	position: absolute;
+	left: 0;
+}
+
+.icon-wrapper:before {
+	border-bottom: solid 1.235em;
+	top: -1.235em;
+}
+
+.icon-wrapper:after {
+	border-top: solid 1.235em;
+	bottom: -1.235em;
+}
+
+.icon-wrapper .icon {
+	cursor: default;
+}
+
+.icon-wrapper .icon:before {
+	font-size: 1.5rem;
+}
+
+.icon-wrapper.major {
+	display: block;
+	margin: 1.235em 0 3.235em 0;
+}
+
+.icon-wrapper.small {
+	font-size: 0.75em;
+}
+
+.icon-wrapper.small .icon:before {
+	font-size: 1.25rem;
+}
+
+.icon-wrapper {
+	background-color: #f6f6f6;
+	box-shadow: 0 -1px 0 0 #f6f6f6, 0 1px 0 0 #f6f6f6;
+}
+
+.icon-wrapper:before {
+	border-bottom-color: #f6f6f6;
+}
+
+.icon-wrapper:after {
+	border-top-color: #f6f6f6;
+}
+
+
+.jumbotron {		
+	background-image: url("../img/hero-bg-575x259.jpg");
+	background-position: center center;	
+	background-repeat: no-repeat;
+     background-size: cover;
+	padding-top: 0; 
+	min-height: 12rem;
+}
+
+.jumbotron-heading {
+	top: 4.25rem;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+.spotlight h2 {
+	font-size: 2.25em;
+	font-weight: 800;
+	margin: 0 0 0.2rem 0;
+}
+
+.spotlight img {
+	max-width: 100%;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.jumbotron, .card img {
+	border-radius: 0;
+}
+
+.jumbotron-heading {
+	position: relative;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1rem;		
+}
+
+.jumbotron-heading:after,
+.home .groups h3:after,
+.contact-other .media h5:after {
+	border-bottom: 0;
+}
+
+.groups div[class="col-lg-4"] {
+	/* use the mixin for this in production */
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.home .groups p {
+	clear: left;
+}
+
+.card {
+	border: none;
+}
+
+.contact-other .media h5 {
+	
+}
+.contact-other .media h5:after {
+	display: none;
+}
+
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) { 
+	.jumbotron {		
+		background-image: url("../img/hero-bg-800x360.jpg");
+		min-height: 20rem;
+	}
+
+	.jumbotron-heading {
+		top: 9rem;
+		font-size: 2rem;				
+	}
+
+	.spotlight h2 {
+		font-size: 1.75rem;				
+	}
+
+	h3 {
+		font-size: 1.25rem;						
+	}	
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) { 
+	.jumbotron {		
+		background-image: url("../img/hero-bg-1000x450.jpg");
+		min-height: 20rem;
+	}
+
+	.jumbotron-heading {
+		top: 9rem;
+		font-size: 2rem;			
+	}
+
+	.spotlight h2 {
+		font-size: 1.5rem;				
+	}	
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) { 
+	.jumbotron {		
+		background-image: url("../img/hero-bg-1200x540.jpg");
+		min-height: 20rem;
+	}
+
+	.jumbotron-heading {
+		top: 9rem;
+		font-size: 2.25rem;
+	}
+
+	.spotlight h2 {
+		font-size: 1.75rem;				
+	}
+
+	h3 {		
+		font-size: 1rem;
+	}
+	
+}
+
+/** Extra large devices (large desktops, 1200px and up) **/
+@media (min-width: 1200px) { 
+	.jumbotron {		
+		background-image: url("../img/hero-bg-2000x900.jpg");		
+		min-height: 40rem;
+	}
+
+	.jumbotron-heading {
+		top: 18rem;
+		font-size: 2.75rem;
+	}
+
+	.spotlight h2 {
+		font-size: 2.25rem;		
+	}
+
+	.home .groups {
+		padding-top: 3rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;		
+	}
+
+	
+}

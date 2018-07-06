@@ -216,8 +216,12 @@ h3 {
 	border: none;
 }
 
+.contact-other {
+	margin-top: 50px; /** use a mixin here in develelopment **/
+}
+
 .contact-other .media h5 {
-	
+	color: pink !important;
 }
 .contact-other .media h5:after {
 	display: none;
@@ -243,6 +247,10 @@ h3 {
 	h3 {
 		font-size: 1.25rem;						
 	}	
+
+	.contact-other .media h5 {
+		color: green !important;
+	}
 }
 
 /** Medium devices (tablets, 768px and up) **/
@@ -260,6 +268,14 @@ h3 {
 	.spotlight h2 {
 		font-size: 1.5rem;				
 	}	
+
+	.contact-other {
+		margin-top: 0;
+	}
+	
+	.contact-other .media h5 {
+		color: orange !important;
+	}
 }
 
 /** Large devices (desktops, 992px and up) **/

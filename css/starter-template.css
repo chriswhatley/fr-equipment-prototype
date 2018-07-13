@@ -38,10 +38,10 @@ h6:after {
 	
 .navbar-brand {
 	font-family: "Raleway", Helvetica, sans-serif;
-    color: #444444;
-    font-size: 1.25rem;
-    font-weight: 800;
-    letter-spacing: -1px;
+	color: #444444;
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: -1px;
 }
 
 /* Button */
@@ -217,22 +217,57 @@ h3 {
 }
 
 .contact-other {
-	margin-top: 50px; /** use a mixin here in develelopment **/
-	font-size: 0.9rem;
+	margin-top: 50px; /** use a mixin here in develelopment **/		
+	font-size: 0.9em;
 }
 
-label {
+label, 
+.contact-other h5 {
 	color: #444;	
-	font-size: 0.9em;		
+	font-size: 1em;		
+}
+
+.form-control {
+	font-size: 0.9em; /* this is probably a SASS variable - check in dev stage */
+}
+
+.contact-other h5:after {
+	display: none;
 }
 
 .contact-other .media h5 {
 	color: pink !important;
 }
-.contact-other .media h5:after {
-	display: none;
+
+.contact-other a {
+	display: inline-block;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+	color: #444;
+	text-decoration: none;
+	transition: border-bottom 0.3s ease-in-out;
 }
 
+.contact-other a:hover {
+	color: #444;
+	border-bottom: 2px solid rgba(68, 68, 68, 0.75);	
+}
+
+.smallprint {
+	font-size: 0.9em !important;	
+}
+
+.smallprint .policies ul {	
+	padding-left: 0;
+}
+
+.smallprint .policies li {
+	list-style-type: none;
+	display: block;	
+}
+
+.smallprint .policies a {
+	
+}
 
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) { 

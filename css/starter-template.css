@@ -239,7 +239,8 @@ label,
 	color: pink !important;
 }
 
-.contact-other a {
+.contact-other a,
+.smallprint .policies a {
 	display: inline-block;
 	border-bottom: 2px solid rgba(255, 255, 255, 0);
 	color: #444;
@@ -247,13 +248,19 @@ label,
 	transition: border-bottom 0.3s ease-in-out;
 }
 
-.contact-other a:hover {
+.contact-other a:hover,
+.smallprint .policies a:hover {
 	color: #444;
 	border-bottom: 2px solid rgba(68, 68, 68, 0.75);	
 }
 
-.smallprint {
-	font-size: 0.9em !important;	
+.smallprint .copyright {
+	font-size: 0.9em;	
+}
+
+.smallprint .policies {
+	text-align: left;
+	font-size: 0.75em;	
 }
 
 .smallprint .policies ul {	
@@ -262,10 +269,20 @@ label,
 
 .smallprint .policies li {
 	list-style-type: none;
-	display: block;	
+	display: inline-block;		
 }
 
-.smallprint .policies a {
+.smallprint .policies li:after {
+	content: '|';
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.smallprint .policies li:last-of-type:after {
+	content: '';
+}
+
+.smallprint .policies {
 	
 }
 
@@ -312,10 +329,22 @@ label,
 
 	.contact-other {
 		margin-top: 0;
-	}
+	}	
 	
 	.contact-other .media h5 {
 		color: orange !important;
+	}
+
+	.smallprint .policies {
+		text-align: right;
+		font-size: 0.8em;	
+	}
+}
+
+/** we need to correct the spacing of our contact-other title **/
+@media (min-width: 768px) and (max-width: 1023px) { 
+	.contact-other h3 {
+		margin: 3rem 0 4rem 0;			
 	}
 }
 

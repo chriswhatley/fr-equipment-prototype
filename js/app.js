@@ -1,3 +1,4 @@
+/* drop down sub-menus */
 $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
   if (!$(this).next().hasClass('show')) {
     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
@@ -12,3 +13,4 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
 
   return false;
 });
+

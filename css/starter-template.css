@@ -372,7 +372,7 @@ label,
 	}	
 
 	.smallprint .policies {
-		text-align: right;
+		text-align: left;
 		font-size: 0.8em;	
 	}
 }
@@ -446,6 +446,9 @@ label,
 		font-size: 1rem;
 	}
 	
+	.smallprint .policies {
+		text-align: right;
+	}
 }
 
 /** Extra large devices (large desktops, 1200px and up) **/

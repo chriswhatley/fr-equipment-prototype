@@ -44,16 +44,16 @@ h6:after {
 	font-family: "Raleway", Helvetica, sans-serif;
 	/* color: #444444; */
 	color: red !important;
-	font-size: 2.25rem;
+	font-size: 1.75rem;
 	font-weight: 800;
-	letter-spacing: -0.15rem;
+	letter-spacing: -0.15rem;;
 }
 
 .navbar-brand > sup {
 	display: inline-block;
 	top: -.375em;
-	font-size: 1.5rem;		
-	padding-left: 0.20rem;	
+	font-size: 1.2rem;
+	padding-left: 0.20rem;
 	font-weight: bolder;
 	margin-right: 0.1rem;
 }
@@ -64,8 +64,8 @@ h6:after {
 	content: '';
 	bottom: 0;
 	left: 0.05rem;
-	width: 0.95rem;
-	padding-top: 0.7rem;	
+	width: 0.75rem;
+	padding-top: 0.6rem;
 	border-bottom: solid 3px;
 }
 
@@ -326,6 +326,16 @@ label,
 @media (min-width: 576px) { 
 	.navbar-brand {
 		color: blue !important;
+		font-size: 2.3rem;
+	}
+
+	.navbar-brand > sup {
+		font-size: 1.5rem;
+	}
+
+	.navbar-brand > sup:after {		
+		width: 0.95rem;
+		padding-top: 0.75rem;		
 	}
 
 	.jumbotron {		
@@ -351,6 +361,18 @@ label,
 @media (min-width: 768px) { 
 	.navbar-brand {
 		color: pink !important;
+		font-size: 2.5rem;
+	}
+
+	.navbar-brand > sup {
+		top: -.325em;
+		font-size: 1.75rem;
+		padding-left: 0.20rem;
+    }
+
+    .navbar-brand > sup:after {		
+		width: 1.15rem;
+		padding-top: 0.85rem;		
 	}	
 
 	.jumbotron {		
@@ -389,6 +411,12 @@ label,
 	.navbar-brand {
 		color: green !important;
 	}
+
+	.navbar-brand > sup {
+		top: -.315em;
+		font-size: 1.75rem;
+		padding-left: 0.20rem;
+    }
 
 	.nav-item {
 		margin-left: 2rem;

@@ -46,7 +46,7 @@ h6:after {
 	color: red !important;
 	font-size: 1.75rem;
 	font-weight: 800;
-	letter-spacing: -0.15rem;;
+	letter-spacing: -0.15rem;
 }
 
 .navbar-brand > sup {
@@ -210,30 +210,32 @@ h6:after {
 }
 
 .jumbotron-heading {
-	top: 4.25rem;
+	position: relative;
+	top: 3.5rem;
+	color: #ffffff;	
 	font-weight: 800;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	letter-spacing: -0.1rem;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.jumbotron-heading span {
+	display: block;
 }
 
 .spotlight h2 {
-	font-size: 2.25em;
+	font-size: 1.9em;
 	font-weight: 800;
 	margin: 0 0 0.2rem 0;
+	letter-spacing: -0.05rem;
 }
 
 .spotlight img {
 	max-width: 100%;
 }
 
-
 .jumbotron, .card img {
 	border-radius: 0;
-}
-
-.jumbotron-heading {
-	position: relative;
-	color: #ffffff;
-	font-weight: bold;
 }
 
 h3 {
@@ -344,8 +346,8 @@ label,
 	}
 
 	.jumbotron-heading {
-		top: 9rem;
-		font-size: 2rem;				
+		top: 5rem;
+		font-size: 3rem;				
 	}
 
 	.spotlight h2 {
@@ -380,10 +382,12 @@ label,
 		min-height: 20rem;
 	}
 
+	/*
 	.jumbotron-heading {
 		top: 9rem;
 		font-size: 2rem;			
 	}
+	*/
 
 	.spotlight h2 {
 		font-size: 1.5rem;				
@@ -461,9 +465,8 @@ label,
 		min-height: 20rem;
 	}
 
-	.jumbotron-heading {
-		top: 9rem;
-		font-size: 2.25rem;
+	.jumbotron-heading {		
+		font-size: 3.25rem;
 	}
 
 	.spotlight h2 {
@@ -482,8 +485,7 @@ label,
 /** Extra large devices (large desktops, 1200px and up) **/
 @media (min-width: 1200px) { 
 	.navbar-brand {
-		/* color: orange !important; */
-		color: #343a40 !important;		
+		color: purple !important;
 	}
 
 	.jumbotron {		
@@ -492,8 +494,8 @@ label,
 	}
 
 	.jumbotron-heading {
-		top: 18rem;
-		font-size: 2.75rem;
+		top: 14rem;
+		font-size: 4.25rem;
 	}
 
 	.spotlight h2 {

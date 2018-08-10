@@ -41,6 +41,7 @@ h6:after {
 }
 
 .navbar-brand {
+	padding-top: 0.75rem;
 	font-family: "Raleway", Helvetica, sans-serif;
 	color: #444444 !important;
 	/* color: red !important; */
@@ -281,6 +282,33 @@ h3 {
 .card {
 	border: none;
 }
+
+.intro {
+	margin-bottom: 3rem;
+}
+
+.review .body h5 {
+	margin-top: 2rem;
+}
+
+.btn-enquire {	
+	border: 0;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-weight: 700;
+	height: 2.75em;
+	line-height: 2.75em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
 
 .contact-other {
 	margin-top: 50px; /** use a mixin here in develelopment **/		

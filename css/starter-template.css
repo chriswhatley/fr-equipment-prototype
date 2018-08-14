@@ -44,7 +44,7 @@ h6:after {
 	padding-top: 0.75rem;
 	font-family: "Raleway", Helvetica, sans-serif;
 	color: #444444 !important;
-	/* color: red !important; */
+	color: red !important;
 	font-size: 1.75rem;
 	font-weight: 800;
 	letter-spacing: -0.15rem;
@@ -308,6 +308,13 @@ h3 {
 	transition: background-color 0.2s ease-in-out;
 }
 
+.btn-enquire span {
+	display: none;
+}
+
+.sidebar {
+	margin-top: 3rem;
+}
 
 
 .contact-other {
@@ -375,7 +382,7 @@ label,
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) { 
 	.navbar-brand {
-		/* color: blue !important; */
+		color: blue !important;
 		font-size: 2.3rem;
 	}
 
@@ -416,13 +423,17 @@ label,
 
 	h3 {
 		font-size: 1.25rem;						
-	}		
+	}			
+
+	.btn-enquire span {
+		display: inline;
+	}
 }
 
 /** Medium devices (tablets, 768px and up) **/
 @media (min-width: 768px) { 
 	.navbar-brand {
-		/* color: pink !important; */
+		color: pink !important;
 		font-size: 2.5rem;
 	}
 
@@ -466,6 +477,10 @@ label,
 		text-align: left;
 		font-size: 0.8em;	
 	}
+
+	.sidebar {
+		margin-top: 0;
+	}
 }
 
 /** we need to correct the spacing of our contact-other title **/
@@ -478,7 +493,7 @@ label,
 /** Large devices (desktops, 992px and up) **/
 @media (min-width: 992px) { 
 	.navbar-brand {
-		/* color: green !important; */
+		color: green !important;
 	}
 
 	.navbar-brand > sup {
@@ -562,7 +577,7 @@ label,
 /** Extra large devices (large desktops, 1200px and up) **/
 @media (min-width: 1200px) { 
 	.navbar-brand {
-		/* color: purple !important; */
+		color: purple !important;
 	}
 
 	.jumbotron {		

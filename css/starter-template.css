@@ -263,6 +263,11 @@ h3 {
 	font-size: 1rem;		
 }
 
+.review h3,
+.legal h3 {
+	font-size: 1.25rem;			
+}
+
 .jumbotron-heading:after,
 .home .groups h3:after,
 .contact-other .media h5:after {
@@ -283,12 +288,9 @@ h3 {
 	border: none;
 }
 
-.intro {
-	margin-bottom: 3rem;
-}
-
-.review .body h5 {
-	margin-top: 2rem;
+.review h5,
+.legal h5 {	
+	font-size: 1rem;
 }
 
 .btn-enquire {	
@@ -612,5 +614,9 @@ label,
 
 	h3 {
 		font-size: 1.25rem;		
+	}
+
+	.legal h3 {	
+		font-size: 1.75rem;
 	}
 }

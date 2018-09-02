@@ -329,13 +329,16 @@ h3 {
 }
 
 label, 
-.contact-other h5 {
+.contact-other h5
+{
 	color: #444;	
 	font-size: 1em;		
 }
 
+.form-check .form-check-label,
 .form-control {
-	font-size: 0.9em; /* this is probably a SASS variable - check in dev stage */
+	font-size: 0.9rem; /* this is probably a SASS variable - check in dev stage */	
+	font-weight: 400;
 }
 
 .contact-other h5:after {
